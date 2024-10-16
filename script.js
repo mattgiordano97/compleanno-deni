@@ -18,9 +18,11 @@ button.addEventListener("click", () => {
         console.log("codice corretto");
         result.textContent = "Sempre sia lodato. Ora clicca il coso blu.";
         hiddenLink.hidden = false;
+        result.style.color = "green";
     }
     else {
         result.textContent = insulti[insultiIndex];
         insultiIndex = (insultiIndex + 1) % insulti.length;
+        result.style.color = "red";
     }
 });
